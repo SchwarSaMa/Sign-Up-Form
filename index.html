@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Sign Up</title>
-    <link href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
+    <div class="content-container">
         <header>
-            <img src="/Sign-Up-Form/images/odin-lined.png" alt="The Odin Project Logo">
-            <p>Text to describe</p>
+            <div id="logo-container">
+                <img src="/Sign-Up-Form/images/odin-icon-22b41941.svg" alt="The Odin Project Logo" width="80px" height="127px"><span>ODIN</span>
+            </div>
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+            <p>Sign up now to get started!</p>
+            <p>You know you want to.</p>
         </header>
         <main>
             <section>
                 <form id="create-account">
+                    <h2>Let's do this!</h2>
                     <div class="form-controls">
                         <label for="first-name">First Name</label>
                         <input id="first-name" type="text" name="first-name">
@@ -41,7 +46,7 @@
                     </div>
                 </form>
             </section>
-            <section>
+            <section id="submit-section">
                 <button type="submit" form="create-account">Create Account</button>
                 <p>Already have an account? <a>Log in</a></p>
             </section>

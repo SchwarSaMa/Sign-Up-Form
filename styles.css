@@ -1,0 +1,76 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/Sign-Up-Form/images/louis-gaudiau-MFWnv4em1XA-unsplash.jpg');
+    background-size: cover;
+    background-color: black;
+}
+
+#logo-container, section:first-child{
+    margin-bottom: 20px;
+}
+
+.content-container{
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+header p, #submit-section{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Header */
+header{
+    margin-bottom: 50px;
+}
+
+#logo-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#logo-container span{
+    
+}
+
+header p{
+    margin-bottom: 10px;
+}
+
+/* Form */
+#create-account{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+#create-account h2{
+    grid-column: 1 / span 2;
+}
+
+input{
+    border: none;
+    width: 100%;
+}
+
+input:focus{
+    outline: 2px solid /*rgba(77, 92, 143)*/ rgb(208, 138, 58);
+}
+
+label{
+    display: block;
+}
