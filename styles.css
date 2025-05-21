@@ -30,6 +30,12 @@ header p, #submit-section{
     padding-right: 20px;
 }
 
+/* Fonts */
+@font-face {
+    font-family: odinFont;
+    src: url(/Sign-Up-Form/fonts/Norse-Bold.otf);
+}
+
 /* Header */
 header{
     margin-bottom: 50px;
@@ -37,12 +43,14 @@ header{
 
 #logo-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 #logo-container span{
-    
+    font-family: odinFont;
+    font-size: 4rem;
+    margin-left: 10px;
 }
 
 header p{
