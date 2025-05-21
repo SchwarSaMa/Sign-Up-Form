@@ -65,6 +65,7 @@ header p{
     gap: 10px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
+    box-shadow: 10px 10px 5px grey;
 }
 
 #create-account h2{
@@ -74,12 +75,21 @@ header p{
 input{
     border: none;
     width: 100%;
+    transition: 0.2s ease-out;
 }
 
 input:focus{
-    outline: 2px solid /*rgba(77, 92, 143)*/ rgb(208, 138, 58);
+    box-shadow: 5px 5px 5px rgb(46, 91, 142);
+    outline: 2px solid rgb(46, 91, 142);
+    transition: 0.2s ease-in;
+}
+
+input:invalid{
+    outline: 2px solid rgb(208, 50, 50);
 }
 
 label{
+    font-size: 0.8rem;
+    text-transform: uppercase;
     display: block;
 }
