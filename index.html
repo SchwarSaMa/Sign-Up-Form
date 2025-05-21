@@ -22,32 +22,32 @@
                     <h2>Let's do this!</h2>
                     <div class="form-controls">
                         <label for="first-name">First Name</label>
-                        <input id="first-name" type="text" name="first-name">
+                        <input id="first-name" type="text" name="first-name" minlength="2" maxlength="15" required>
                     </div>
                     <div class="form-controls">
                         <label for="last-name">Last Name</label>
-                        <input id="last-name" type="text" name="last-name">
+                        <input id="last-name" type="text" name="last-name" minlength="2" required>
                     </div>
                     <div class="form-controls">
                         <label for="email">Email</label>
-                        <input id="email" type="email" name="email">
+                        <input id="email" type="email" name="email" required>
                     </div>
                     <div class="form-controls">
                         <label for="phone">Phone Number</label>
-                        <input id="phone" type="tel" name="phone">
+                        <input id="phone" type="tel" name="phone" pattern="\d+">
                     </div>
                     <div class="form-controls">
                         <label for="password">Password</label>
-                        <input id="password" type="password" name="password">
+                        <input id="password" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                     </div>
                     <div class="form-controls">
                         <label for="confirm-password">Confirm password</label>
-                        <input id="confirm-password" type="password" name="confirm-password">
+                        <input id="confirm-password" type="password" name="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                     </div>
                 </form>
             </section>
             <section id="submit-section">
-                <button type="submit" form="create-account">Create Account</button>
+                <button id="submit-btn" type="submit" form="create-account">Create Account</button>
                 <p>Already have an account? <a>Log in</a></p>
             </section>
         </main>
