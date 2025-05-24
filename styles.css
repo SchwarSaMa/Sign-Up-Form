@@ -30,6 +30,10 @@ header p, #submit-section{
     padding-right: 20px;
 }
 
+a:hover{
+    cursor: pointer;
+}
+
 /* Fonts */
 @font-face {
     font-family: odinFont;
@@ -80,16 +84,39 @@ input{
 
 input:focus{
     box-shadow: 5px 5px 5px rgb(46, 91, 142);
-    outline: 2px solid rgb(46, 91, 142);
+    outline: 3px solid rgb(46, 91, 142);
     transition: 0.2s ease-in;
 }
 
 input:user-invalid{
-    outline: 2px solid rgb(208, 50, 50);
+    border: 1px solid rgb(208, 50, 50);
 }
 
 label{
     font-size: 0.8rem;
     text-transform: uppercase;
-    display: block;
+    /*display: block;*/
 }
+
+#submit-btn{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(46, 91, 142);
+    color: white;
+    transition: 0.2s ease-out;
+}
+
+#submit-btn:focus{
+    outline: 2px solid white;
+    transition: 0.2s ease-in;
+}
+
+#submit-btn:hover{
+    background-color:rgb(21, 43, 68);
+    cursor: pointer;
+}
+
+/*.fa-exclamation{
+    margin-left: 5px;
+}*/
