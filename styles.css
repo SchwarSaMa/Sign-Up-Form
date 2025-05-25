@@ -83,6 +83,8 @@ header p{
 
 input{
     border: none;
+    border-radius: 5px;
+    padding: 5px 2px 5px 2px;
     width: 100%;
     transition: 0.2s ease-out;
 }
@@ -122,6 +124,14 @@ label{
     cursor: pointer;
 }
 
-/*.fa-exclamation{
+.fa-exclamation{
+    display: none;
     margin-left: 5px;
-}*/
+    font-size: 1rem;
+    color: rgb(208, 50, 50);
+}
+
+.active{
+    display: inline;
+    transition: 0.5s ease-in;
+}
